@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Now - Gluta White Soap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="product-img">
+    <img src="https://princesscosmeticsqa.com/cdn/shop/files/precious-skin-extra-pure-gluta-white-soap-80g-sabon-jlota-alabyd-alnky-llghay-mn-bryshs-skyn-80-jm-243672.jpg?v=1738160497&width=1946" alt="Gluta White Soap">
+  </div>
+  <div class="product-details">
+    <h2>EXTRA PURE GLUTA WHITE SOAP</h2>
+    <details style="margin-top: 15px;">
+      <summary style="cursor: pointer; font-weight: bold;">📋 See Details</summary>
+      <div style="margin-top: 10px;">
+        <p>আপনাদের সবচেয়ে জনপ্রিয় সোপ এবং আমাদের পেইজের সবচেয়ে রিকমেন্ড সোপটি আবারো রিস্টক করা হয়েছে। রোজার মাস থেকে অনেককেই এই সোপটি দিতে পারি নি। এবার ইনশাআল্লাহ সবাই পেয়ে যাবেন।</p>
+        <ul>
+          <li>The ultimate best soap for both face and body 😍</li>
+          <li>✅ Reduces uneven skintone</li>
+          <li>✅ Makes skin bright & glowy</li>
+          <li>✅ Makes skin fresh and soft</li>
+          <li>✅ Removes suntan</li>
+          <li>✅ Removes wrinkles and freckles</li>
+          <li>✅ Gives glowing, soft skin you’ll want to touch</li>
+        </ul>
+        <p>Extra Pure Gluta White Soap comes with exfoliating gloves ❤️<br/>
+        <p>Made in Thailand 🇹🇭</p>
+      </div>
+    </details>
+
+    <p><strong>Made in Thailand</strong> | Price: <strong>600৳</strong></p>
+
+    <label>Quantity:</label>
+    <div class="qty-wrapper">
+      <button type="button" onclick="changeQty('main', -1)">−</button>
+      <input type="text" id="quantity-main" value="1" readonly />
+      <button type="button" onclick="changeQty('main', 1)">+</button>
+    </div>
+
+    <label for="delivery">Delivery Area (Auto Detected):</label>
+<select id="delivery">
+  <option value="120">Outside Mymensingh - 120৳</option>
+  <option value="60">Inside Mymensingh - 60৳</option>
+</select>
+<p id="location-status" style="color: green; font-size: 14px; margin-top: 5px;"></p>
+
+
+    <label style="margin-top: 15px;">🧾 Add-ons (Optional):</label>
+    <div id="addons">
+      <div class="addon-item">
+        <img src="https://images.prom.ua/6246680616_w640_h640_6246680616.jpg" alt="Sleeping Mask">
+        <div class="addon-content">
+          <div class="addon-title">Sleeping Mask(+30৳)</div>
+          <div class="qty-wrapper">
+            <button type="button" onclick="changeQty('addon-1', -1)">−</button>
+            <input type="text" id="quantity-addon-1" value="0" readonly />
+            <button type="button" onclick="changeQty('addon-1', 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="addon-item">
+        <img src="https://bfmstore.s3.eu-north-1.amazonaws.com/uploads/all/vgKyvIqPptR8cVaMOXG3TrlbFLzutXzgoMMBfGSh.jpg" alt="Sheet Mask">
+        <div class="addon-content">
+          <div class="addon-title">Sheet Mask(+80৳)</div>
+          <div class="qty-wrapper">
+            <button type="button" onclick="changeQty('addon-2', -1)">−</button>
+            <input type="text" id="quantity-addon-2" value="0" readonly />
+            <button type="button" onclick="changeQty('addon-2', 1)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="total" id="totalPrice">Total: 600৳</div>
+
+    <label>Your Name:</label>
+    <input type="text" id="name" required>
+    <label>Your Address:</label>
+    <textarea id="address" rows="3" required></textarea>
+    <label>Your Phone:</label>
+    <input type="tel" id="phone" pattern="[0-9]+" required>
+
+    <button class="btn" onclick="orderNow()">📦 Order on WhatsApp</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
